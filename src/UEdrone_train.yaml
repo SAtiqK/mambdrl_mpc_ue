@@ -1,0 +1,52 @@
+follow_trajectories: False
+
+flags:
+    print_minimal: False
+    get_new_data: True
+    just_get_data: False
+    use_existing_dyn_model: False
+    get_new_MPC_data: True
+    yaw_actuation: True
+    MinMaxpreproc: False
+    only_visualize: False
+    use_PETS: False
+
+data_collection:
+    use_threading: False
+    num_rollouts_train: 1
+    num_rollouts_val: 0
+
+dyn_model:
+    num_fc_layers: 4
+    depth_fc_layers: 128
+    batchsize: 512
+    lr: 0.001
+    nEpoch: 30
+    fraction_use_new: 0.5
+
+controller:
+    horizon: 10
+    num_control_samples: 60
+
+aggregation:
+    num_aggregation_iters: 3
+    num_trajectories_for_aggregation: 10
+    rollouts_forTraining: 1
+
+noise:
+    make_aggregated_dataset_noisy: True
+    make_training_dataset_noisy: True
+    noise_actions_during_MPC_rollouts: False
+
+steps:
+    dt_steps: 1
+    steps_per_episode: 100
+    steps_per_rollout_train: 100
+    steps_per_rollout_val: 100
+
+saving:
+    min_rew_for_saving: -100
+
+generic:
+    visualize_True: True
+    visualize_False: False

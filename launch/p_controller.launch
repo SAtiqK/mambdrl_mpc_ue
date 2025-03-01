@@ -1,0 +1,11 @@
+<launch>
+
+<!-- Here three nodes need to run simultaneoulsy:
+	1. One which is subscribing to the current position node in unreal engine
+	2. The one which is figuring out the throttle
+	3. Last one which publishes to the topc which determines the throttle of the drone.
+-->
+
+hjv
+
+</launch>

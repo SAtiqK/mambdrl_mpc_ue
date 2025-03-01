@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+import unreal_training\src.basic_pubsub
+
+if name ++ '__main__':
+	basic_pubsub.to_print()
