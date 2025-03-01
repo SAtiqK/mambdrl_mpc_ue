@@ -6,7 +6,6 @@ from data_save import data_save
 from data_manipulation import *
 from numpy import linalg as LA
 import tensorflow as tf
-##glpat-heg3e_GkuhiaYoPYtVyS
 
 pController_freq = 2
 episode_counter = 0
