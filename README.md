@@ -1,4 +1,4 @@
-# Multi-Agent Model-Based Deep Reinforcement Learning for Collaborative Paylaod Transportation using UAVs
+# Multi-Agent Model-Based Deep Reinforcement Learning for Collaborative Payload Transportation using UAVs
 
 ## Overview
 
